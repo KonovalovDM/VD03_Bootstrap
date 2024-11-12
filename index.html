@@ -3,11 +3,213 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Start with Bootstrap demo</title>
+    <title>Start with Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+          <!-- Шапка сайта -->
+    <header class="bg-light p-3">
+        <div class="container">
+            <h1 class="text-center">Актеры мирового уровня</h1>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">Главная</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-4">
+
+        <!-- Секция 1: Слайдер -->
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img_photo/friends_2.jpg" class="d-block w-10" alt="Слайд 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img_photo/johnny-depp_g.webp" class="d-block w-50" alt="Слайд 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img_photo/nicolas_cage_3.jpg" class="d-block w-50" alt="Слайд 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img_photo/tom_cruise.jpg" class="d-block w-50" alt="Слайд 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img_photo/william_bradley_pitt.jpg" class="d-block w-50" alt="Слайд 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Следующий</span>
+            </a>
+        </div>
+
+        <!-- Секция 2: Карточки -->
+        <div class="row my-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img_photo/hugh_jackman_2.jpg" class="card-img-top" alt="hugh_jackman">
+                    <div class="card-body">
+                        <h5 class="card-title">Хью Майкл Дже́кман</h5>
+                        <p class="card-text">Дата рождения: 12 октября 1968.<br>Город: Сидней, Австралия </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img_photo/johnny_depp_3.jpg" class="card-img-top" alt="johnny_depp">
+                    <div class="card-body">
+                        <h5 class="card-title">Джон Кри́стофер (Джо́нни) Депп II</h5>
+                        <p class="card-text">Дата рождения: 9 июня 1963<br>Город: Оуэнсборо, Кентукки, США.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img_photo/nicolas_cage_2.jpg" class="card-img-top" alt="nicolas_cage">
+                    <div class="card-body">
+                        <h5 class="card-title">Ни́колас Кейдж</h5>
+                        <p class="card-text">Дата рождения: 7 января 1964<br>Город: Лонг-Бич, Калифорния, США</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Секция 3: Аккордеон -->
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Джон Кри́стофер (Джо́нни) Депп II
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Джон Кри́стофер (Джо́нни) Депп II<br>(англ. John Christopher «Johnny» Depp II; род. 9 июня 1963, Оуэнсборо, Кентукки, США)<br>
+                Американский актёр, кинорежиссёр, музыкант, сценарист и продюсер.<br><br>Наибольшую известность Джонни принесли роли в фильмах
+                Тима Бёртона, в таких известных картинах, как:<br><br>«Эдвард Руки-ножницы», «Сонная Лощина», «Чарли и шоколадная фабрика»,
+                «Эд Вуд», «Суини Тодд, демон-парикмахер с Флит-стрит» и «Алиса в Стране чудес»,<br> мультфильм «Труп невесты»,
+                а также образ капитана Джека Воробья в серии фильмов «Пираты Карибского моря».<br>
+                Наиболее значимыми фильмами были признаны такие картины, как «Что гложет Гилберта Грэйпа», «Бенни и Джун», «Мертвец»,
+                «Донни Браско», «Страх и ненависть в Лас-Вегасе», «Кокаин», «Волшебная страна», «Турист».
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Альфре́до Джеймс (Аль) Пачи́но
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Альфре́до Джеймс (Аль) Пачи́но <br>(англ. Alfredo James (Al) Pacino; род. 25 апреля 1940, Восточный Гарлем, Манхэттен, Нью-Йорк, США)<br>
+                        Американский актёр театра, кино и телевидения, кинорежиссёр, сценарист.<br><br>
+                        Наиболее знаменит своими ролями гангстеров — Майкл Корлеоне в трилогии Фрэнсиса Форда Копполы «Крёстный отец» (1972, 1974, 1990) и Тони Монтана
+                        в фильме Брайана Де Пальма «Лицо со шрамом» (1983). Роль Фрэнка Слейда в фильме «Запах женщины» (1992) принесла актёру «Оскар» в номинации Лучшая
+                        мужская роль, что стало его первым успехом после семи предыдущих номинаций.<br>
+                        <br>Аль Пачино дебютировал в кино в 1969 году в фильме «Я, Натали», сыграв в нём незначительную второстепенную роль. В 1971 году он снялся во втором
+                        фильме, но теперь уже сыграл главную роль в драме «Паника в Нидл-Парке». В этом фильме актёра заметил Коппола и пригласил в «Крёстный отец» на роль Майкла Корлеоне.<br>
+                        <br>Помимо удачной карьеры в кино, Аль Пачино является знаковым театральным актёром. В 1969 и 1977 годах он был награждён престижной театральной
+                        премией «Тони». Кроме того, он является обладателем множества других наград, в том числе и от Американского института киноискусства. Аль Пачино
+                        вместе с Эллен Бёрстин возглавляет Актёрскую студию в Нью-Йорке.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Ро́берт Э́нтони Де Ни́ро-мла́дший
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Ро́берт Э́нтони Де Ни́ро-мла́дший (англ. Robert Anthony De Niro, Jr.;<br> род. 17 августа 1943, Нью-Йорк, Нью-Йорк или Манхэттен, Нью-Йорк)<br> Американский актёр, продюсер и режиссёр.<br><br>
+                        Наиболее известен своей работой в криминальных фильмах, триллерах и сотрудничеством с режиссёром Мартином Скорсезе. Лауреат премий «Золотой глобус» (1981, 2011) и «Оскар» (1975, 1981) (имеет более 35 наград за роли в кино).
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Ни́колас Кейдж
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Ни́колас Кейдж (англ. Nicolas Cage; настоящее имя — Ни́колас Ким Ко́ппола (англ. Nicolas Kim Coppola)<br>
+                род. 7 января 1964, Лонг-Бич, Лос-Анджелес, Калифорния, США)<br>
+                <br>Американский актёр, кинорежиссёр и продюсер. Лауреат премий «Оскар» и «Золотой глобус».<br>
+                <br>Кейдж известен огромным диапазоном ролей: от голливудских блокбастеров и фестивальных шедевров до
+                малобюджетных комедий и откровенно провальных проектов.<br> Из-за особенности игры в кино и отсутствия однозначного
+                амплуа Кейдж приобрёл культовый статус среди поклонников его творчества и титул одного из самых спорных актёров современности.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Хью Майкл Дже́кман
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Хью Майкл Дже́кман (англ. Hugh Michael Jackman; род. 12 октября 1968, Сидней, Новый Южный Уэльс, Австралия)
+                <br>Австралийский актёр, певец и продюсер. <br><br>Стал известен широкой публике по роли супергероя-мутанта Росомахи в серии фильмов «Люди Икс».<br>
+                Вершиной его актёрского мастерства по мнению критиков признана работа в детективном триллере «Пленницы» (2013).<br><br>
+                Широко известен по фильмам «Кейт и Лео», «Пароль „Рыба-меч“», «Ван Хельсинг», «Фонтан», «Престиж», «Живая сталь», «Отверженные»,
+                «Робот по имени Чаппи», «Австралия» и «Величайший шоумен».<br>
+                Номинант на премии «Оскар» (2013), BAFTA (2013) и «Золотой глобус» (2002, 2018), обладатель премии «Золотой глобус» (2013),
+                театральной премии «Тони» (2004, 2012), телевизионной премии «Эмми» (2005) и музыкальной премии «Грэмми» (2019).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-light text-center p-4">
+        <div class="container">
+            <p>Контактная информация: kdm232006@rambler.ru | Телефон: +7 (925) 021-50-85</p>
+            <p>
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
